@@ -27,7 +27,7 @@ else
     ResultOutput(arrString);
 }
 
-//Ввод цифры
+//Ввод цифры пользователем
 int InputNumber()
 {
     Console.Write("Введите цифру : ");
@@ -77,7 +77,7 @@ string[] VerifiArray(string[] stringArray)
     return (stringFirstResult);
 }
 
-//Ручной ввод элементов массива
+//Ручной ввод элементов массива пользователем
 string[] InputStringArray()
 {
     Console.Write("Введите длину массива (однозначное целое число) : ");
@@ -102,7 +102,7 @@ void ResultOutput(string[] stringArray)
     {
         Console.Write($"{stringArray[i]}");
         if ((i + 1) < stringArray.Length)
-        { Console.Write(","); }
+        { Console.Write(", "); }
     }
     Console.Write("]");
     Console.WriteLine();
